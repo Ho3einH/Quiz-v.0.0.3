@@ -16,14 +16,8 @@ export default function poetry(verse) {
 
   verse = verse.trim().split('\n').reverse().join(' / ');
   const lastLetter = verse.charAt(verse.length - 1);
-
-  console.log(`-----------------------------------------------------`);
-
   for (const [index, el] of Object.entries(poems)) {
     const firstLetter = el.charAt(0);
-    // console.log(el);
-    // console.log(lastLetter);
-    // console.log(firstLetter);
     (firstLetter[0] || firstLetter[1]) === lastLetter ? (result = el) : null;
   }
 
@@ -33,3 +27,5 @@ export default function poetry(verse) {
 console.log(`-------------------------- 6 ---------------------------`);
 
 console.log(poetry(poems.a));
+console.log(poetry(poems.b));
+console.log(poetry(poems.c));
