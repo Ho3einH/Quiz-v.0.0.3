@@ -1,6 +1,6 @@
 // file-name: remove-repetitive.js
 'use strict';
-function removerRepetitive(string) {
+export default function removerRepetitive(string) {
   let result = null;
   const noRepeat = [...new Set(string)].join('');
   result = noRepeat.split(' ').join('');
