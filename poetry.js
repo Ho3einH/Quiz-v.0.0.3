@@ -26,6 +26,8 @@ export default function poetry(verse) {
   return null;
 }
 
+console.log(`-------------------------- 6 ---------------------------`);
+
 console.log(
   poetry(
     'اگر دل از تو بگیرم کجا روم ای دوست؟\nبه هر کجا که روم با تو آشنا باشم'
