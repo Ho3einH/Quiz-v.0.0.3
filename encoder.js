@@ -1,6 +1,6 @@
 // file-name: encoder.js
 'use strict';
-function encoder({ inputString, repeatCount }) {
+export default function encoder({ inputString, repeatCount }) {
   let result = null;
   function shift(str) {
     str = str[str.length - 1] + str.slice(0, str.length - 1);
