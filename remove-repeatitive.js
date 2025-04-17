@@ -2,9 +2,11 @@
 'use strict';
 function removerRepetitive(string) {
   let result = '';
-  for (let i = 0; i < string.length; i++) {
-    string[i] === string[i - 1] ? null : (result += string[i]);
-  }
+  // for (let i = 0; i < string.length; i++) {
+  //   string[i] === string[i - 1] ? null : (result += string[i]);
+  // }
+  const noRepeat = [...new Set(string)].join('');
+  result = noRepeat.split(' ').join('');
   return result;
 }
 

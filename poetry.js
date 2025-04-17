@@ -16,7 +16,7 @@ export default function poetry(verse) {
 
   verse = verse.trim().split('\n').reverse().join(' / ');
   const lastLetter = verse.charAt(verse.length - 1);
-  for (const [index, el] of Object.entries(poems)) {
+  for (const el of Object.values(poems)) {
     const firstLetter = el.charAt(0);
     (firstLetter[0] || firstLetter[1]) === lastLetter ? (result = el) : null;
   }
